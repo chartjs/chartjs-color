@@ -447,4 +447,8 @@ Color.prototype.setChannel = function (space, index, val) {
 	return this;
 };
 
+if (typeof window !== 'undefined') {
+	window.Color = Color;
+}
+
 module.exports = Color;
