@@ -1,7 +1,7 @@
 /* MIT license */
 var clone = require('clone');
 var convert = require('color-convert');
-var string = require('color-string');
+var string = require('chartjs-color-string');
 
 var Color = function (obj) {
 	if (obj instanceof Color) {
