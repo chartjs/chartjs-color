@@ -346,6 +346,22 @@ Color.prototype = {
 	}
 };
 
+Color.prototype.spaces = {
+	rgb: ['red', 'green', 'blue'],
+	hsl: ['hue', 'saturation', 'lightness'],
+	hsv: ['hue', 'saturation', 'value'],
+	hwb: ['hue', 'whiteness', 'blackness'],
+	cmyk: ['cyan', 'magenta', 'yellow', 'black']
+};
+
+Color.prototype.maxes = {
+	rgb: [255, 255, 255],
+	hsl: [360, 100, 100],
+	hsv: [360, 100, 100],
+	hwb: [360, 100, 100],
+	cmyk: [100, 100, 100, 100]
+};
+
 Color.prototype.getValues = function (space) {
 	var vals = {};
 
@@ -362,24 +378,11 @@ Color.prototype.getValues = function (space) {
 };
 
 Color.prototype.setValues = function (space, vals) {
-	var spaces = {
-		rgb: ['red', 'green', 'blue'],
-		hsl: ['hue', 'saturation', 'lightness'],
-		hsv: ['hue', 'saturation', 'value'],
-		hwb: ['hue', 'whiteness', 'blackness'],
-		cmyk: ['cyan', 'magenta', 'yellow', 'black']
-	};
-
-	var maxes = {
-		rgb: [255, 255, 255],
-		hsl: [360, 100, 100],
-		hsv: [360, 100, 100],
-		hwb: [360, 100, 100],
-		cmyk: [100, 100, 100, 100]
-	};
-
-	var i;
+	var spaces = this.spaces;
+	var maxes = this.maxes;
 	var alpha = 1;
+	var i;
+
 	if (space === 'alpha') {
 		alpha = vals;
 	} else if (vals.length) {
