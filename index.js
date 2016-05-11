@@ -423,12 +423,6 @@ Color.prototype.setValues = function (space, vals) {
 		if (sname !== space) {
 			this.values[sname] = convert[space][sname](this.values[space]);
 		}
-
-		// cap values
-		for (i = 0; i < sname.length; i++) {
-			capped = Math.max(0, Math.min(maxes[sname][i], this.values[sname][i]));
-			this.values[sname][i] = Math.round(capped);
-		}
 	}
 
 	return true;
