@@ -1,4 +1,4 @@
-# color [![Build Status](https://travis-ci.org/Qix-/color.svg?branch=master)](https://travis-ci.org/Qix-/color)
+# color [![Build Status](https://travis-ci.org/chartjs/chartjs-color.svg?branch=master)](https://travis-ci.org/chartjs/chartjs-color)
 
 > JavaScript library for color conversion and manipulation with support for CSS color strings.
 
