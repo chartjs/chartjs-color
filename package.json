@@ -29,7 +29,6 @@
     "index.js"
   ],
   "scripts": {
-    "build": "gulp build",
     "pretest": "xo",
     "test": "mocha"
   },
