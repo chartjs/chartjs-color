@@ -8,7 +8,6 @@ var equal = assert.equal;
 var ok = assert.ok;
 var strictEqual = assert.strictEqual;
 var notStrictEqual = assert.notStrictEqual;
-var throws = assert.throws;
 
 it('Color() instance', function () {
 	equal(new Color('red').red(), 255);
@@ -726,12 +725,8 @@ it('Level', function () {
 	equal(Color('grey').level(Color('black')), 'AA');
 });
 
-it('Exceptions', function () {
-	throws(function () {
-		Color('unknow');
-	}, /Unable to parse color from string/);
-
-	throws(function () {
-		Color({});
-	}, /Unable to parse color from object/);
+it('Validity', function () {
+	equal(Color('#424242').isValid(), true);
+	equal(Color('unknow').isValid(), false);
+	equal(Color({}).isValid(), false);
 });
