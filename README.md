@@ -1,4 +1,6 @@
-# color [![Build Status](https://travis-ci.org/chartjs/chartjs-color.svg?branch=master)](https://travis-ci.org/chartjs/chartjs-color)
+# chartjs-color
+
+[![npm](https://img.shields.io/npm/v/chartjs-color.svg?style=flat-square)](https://npmjs.com/package/chartjs-color) [![Travis](https://img.shields.io/travis/chartjs/chartjs-color.svg?style=flat-square)](https://travis-ci.org/chartjs/chartjs-color)
 
 > JavaScript library for color conversion and manipulation with support for CSS color strings.
 
