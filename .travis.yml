@@ -1,12 +1,11 @@
 sudo: false
 language: node_js
 node_js:
-  - 0.12
-  - 4
+- 4
 
 script:
-  - gulp build
-  - npm test
+- gulp build
+- npm test
 
 deploy:
 - provider: releases
