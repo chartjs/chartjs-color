@@ -1,6 +1,6 @@
 {
   "name": "chartjs-color",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Color conversion and manipulation with CSS string support",
   "keywords": [
     "color",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "color-convert": "^0.5.3",
-    "chartjs-color-string": "^0.4.0"
+    "chartjs-color-string": "^0.5.0"
   },
   "devDependencies": {
     "browserify": "^10.1.3",
