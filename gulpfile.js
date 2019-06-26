@@ -5,13 +5,9 @@ var streamify = require('gulp-streamify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
-gulp.task('default', ['build', 'watch']);
-
-// Build
 gulp.task('build', buildTask);
-
-// Watch
 gulp.task('watch', watchTask);
+gulp.task('default', gulp.parallel('build', 'watch'));
 
 function buildTask() {
 	return browserify('./index.js', {debug: true})
